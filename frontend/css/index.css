@@ -1,0 +1,255 @@
+body {
+	font-family: 'Montserrat', 'Tahoma', sans-serif;   
+	background-color: #f6f6f6;
+}
+
+header{
+    background: #202020;
+    padding: 20px 0;
+    
+}
+
+.logo1{
+    width: 50px; height: 44px;
+    padding: auto;
+    margin-left: -30%;
+    }
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+    
+}
+
+nav {
+	position: absolute;
+	top: 13px;
+	left: -200px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f5c903;
+	text-decoration: underline;
+}
+
+.search-box {
+    position:absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #202020;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #FEFEFE;
+    font-size: 16px;
+    line-height: 40px;
+	width: 0;
+	transition: .5s;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	background: #202020;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-box:hover > .search-txt {
+	width: 240px;
+	padding: 0 6px;
+
+}
+
+.search-box:hover > .search-btn{
+	background: orange;
+	transition: .5s;
+
+}
+
+
+/*rodapé*/
+
+footer {
+	text-align: center;
+	background: black;
+	padding: 40px 0;
+    flex: 1;
+}
+.logoW {
+    width: 80px; height: 40px;
+    padding: auto;
+    position: relative;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+
+
+/* contato */
+form {
+	margin: 40px 0;
+	padding-left: 2%;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: #202020;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: orange;
+	transform: scale(1.1);
+}
+
+/* home */
+
+.centro-pagina {
+	min-height: 100vh
+}
+
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+    
+}
+
+.principal {
+	padding: 10em 0;
+	background: #FEFEFE;
+	width: 90%;
+	margin: 0 auto;
+    
+    
+}
+
+.principal p {
+	margin: 0 0 1em;
+    
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.respostas {
+	width: 600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.respostas h2 {
+	color: #fff;
+	background: orange;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 700;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.respostas ul {
+	position: relative;
+	background: #fff;
+}
+
+.respostas ul li {
+	list-style: none;
+	padding: 10px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+	transition: transform 0.5s; 
+}
+
+.respostas ul li:hover {
+	transform: scale(1.1);
+	z-index: 100;
+	background: orange;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+}
+
+.respostas ul li span {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: orange;
+	color: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	transform: translateY(-20px);
+}
+
+.respostas ul li:hover span {
+	background: #fff;
+	color: orange;
+}
