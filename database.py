@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("postgresql://postgres:instalock@dbtechmanhelp.clnet8mi9xol.us-east-1.rds.amazonaws.com/postgres")
+engine = create_engine("postgresql://user:password@host:5344/db")
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

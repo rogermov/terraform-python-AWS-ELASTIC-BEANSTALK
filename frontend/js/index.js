@@ -1,5 +1,5 @@
 async function carregarHelps(){
-    const response = await axios.get('http://projhelptechman-dev.us-east-1.elasticbeanstalk.com/helps')
+    const response = await axios.get('yourendpoint')
   
     const helps = response.data
 
